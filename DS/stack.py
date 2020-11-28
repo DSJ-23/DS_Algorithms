@@ -20,6 +20,14 @@ class Stack():
     def remove(self, item):
         self.data.remove(item)
         
+    
+def count_dict(list_number):
+        values = dict.fromkeys(list_number)
+        for i in list_number:
+            values[i] = list_number.count(i)
+        return values
 
-    
-    
+
+
+#contain duplicates 2
+# 448 find all numbers disappeared in array
