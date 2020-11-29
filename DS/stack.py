@@ -31,3 +31,4 @@ def count_dict(list_number):
 
 #contain duplicates 2
 # 448 find all numbers disappeared in array
+# Valid Palindrome you only got 5%
