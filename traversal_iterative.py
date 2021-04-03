@@ -24,10 +24,12 @@ def traverse_tree_in_order(root):
 # print(traverse_tree_in_order(root))
 
 def in_order_iterative(root):
-    line = [root]
+    if root is None:
+        return
+    line = []
     values = []
     current = root
-    while line != []:
+    while True:
         if current is not None:
             line.append(current)
             current = current.left 
@@ -35,9 +37,11 @@ def in_order_iterative(root):
             current = line.pop()
             values.append(current.value)
             current = current.right
+        if current is None and line == []:
+            break
     return values
 
-print(root)
-print(in_order_iterative(root))
+# print(root)
+# print(in_order_iterative(root))
 
 
